@@ -16,6 +16,6 @@ if "error" in result:
 
 else:
     output = sanitise_comments(result)
-    json_to_file(output, "test")
+    json_to_file(output, youtube_url)
     
 input("grabbing done, press any key to exit...")
