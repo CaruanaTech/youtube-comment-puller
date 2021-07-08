@@ -13,6 +13,7 @@ result = get_comments(API_KEY, youtube_url)
 
 if "error" in result:
     print(result['error']['message'])
+    sys.exit(1)
 
 else:
     output = sanitise_comments(result)
